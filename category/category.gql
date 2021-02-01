@@ -1,0 +1,13 @@
+query category($id: String, $slug: String) {
+  category(id: $id, slug: $slug) {
+    id
+    name
+    slug
+    img
+    megamenu
+    active
+    featured
+    createdAt
+    updatedAt
+  }
+}

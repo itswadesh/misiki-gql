@@ -1,0 +1,29 @@
+mutation saveCategory(
+  $id: String
+  $name: String!
+  $slug: String
+  $img: String
+  $featured: Boolean
+  $megamenu: Boolean
+  $active: Boolean
+) {
+  saveCategory(
+    id: $id
+    name: $name
+    slug: $slug
+    img: $img
+    megamenu: $megamenu
+    featured: $featured
+    active: $active
+  ) {
+    id
+    name
+    slug
+    img
+    megamenu
+    featured
+    active
+    createdAt
+    updatedAt
+  }
+}

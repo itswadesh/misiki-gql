@@ -1,0 +1,30 @@
+query popular($city: String) {
+  popular(page: 0, city: $city) {
+    data {
+      id
+      slug
+      name
+      type
+      price
+      stock
+      img
+      time
+      ratings
+      reviews
+      vendor {
+        id
+        firstName
+        lastName
+        phone
+        email
+        info {
+          restaurant
+          kitchenPhotos
+        }
+      }
+    }
+    count
+    pageSize
+    page
+  }
+}

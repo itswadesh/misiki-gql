@@ -1,0 +1,49 @@
+query Product($id: ID!) {
+  product(id: $id) {
+    id
+    slug
+    name
+    description
+    category {
+      id
+      name
+    }
+    categories {
+      id
+      name
+    }
+    type
+    city
+    price
+    stock
+    img
+    time
+    active
+    popularity
+    position
+    badge {
+      featured
+      hot
+      new
+      sale
+      recommended
+    }
+    title
+    metaDescription
+    keywords
+    vendor {
+      id
+      firstName
+      lastName
+      phone
+      email
+      address {
+        address
+      }
+      info {
+        restaurant
+        kitchenPhotos
+      }
+    }
+  }
+}

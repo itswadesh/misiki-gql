@@ -1,0 +1,8 @@
+query myTodaysStatusSummary {
+  myTodaysStatusSummary {
+    _id
+    count
+    amount
+    createdAt
+  }
+}

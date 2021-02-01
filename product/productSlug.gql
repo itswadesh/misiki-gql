@@ -1,0 +1,29 @@
+query productSlug($slug: String!) {
+  productSlug(slug: $slug) {
+    id
+    name
+    description
+    slug
+    img
+    price
+    stock
+    time
+    type
+    ratings
+    reviews
+    vendor {
+      id
+      firstName
+      lastName
+      city
+      avatar
+      ratings
+      reviews
+      info {
+        restaurant
+        public
+        kitchenPhotos
+      }
+    }
+  }
+}

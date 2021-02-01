@@ -1,0 +1,52 @@
+mutation checkout(
+  $address: AddressInput!
+  $paymentMethod: String
+  $location: AddressInput
+) {
+  checkout(
+    address: $address
+    paymentMethod: $paymentMethod
+    location: $location
+  ) {
+    id
+    orderNo
+    otp
+    location {
+      city
+      coords {
+        lat
+        lng
+      }
+      state
+      zip
+    }
+    amount {
+      qty
+      subtotal
+      discount
+      shipping
+      total
+    }
+    payment_order_id
+    delivery {
+      otp
+    }
+    items {
+      status
+      pid
+      name
+      slug
+      img
+      vendor {
+        restaurant
+      }
+    }
+    address {
+      firstName
+      lastName
+      phone
+    }
+    createdAt
+    updatedAt
+  }
+}

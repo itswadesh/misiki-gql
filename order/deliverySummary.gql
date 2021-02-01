@@ -1,0 +1,21 @@
+query deliverySummary {
+  allOrderSummary {
+    _id
+    count
+    amount
+    createdAt
+    cod_paid
+  }
+  todaysStatusSummary {
+    _id
+    count
+    amount
+    createdAt
+  }
+  paymentsSummary {
+    _id
+    count
+    amount
+    cod_paid
+  }
+}

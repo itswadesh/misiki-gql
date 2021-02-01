@@ -1,0 +1,162 @@
+query delivery {
+  delivery {
+    pending {
+      _id
+      count
+      total
+      items {
+        user {
+          firstName
+          lastName
+          phone
+          id
+        }
+        address {
+          firstName
+          lastName
+          address
+          phone
+        }
+        amount {
+          subtotal
+          discount
+          shipping
+          tax {
+            cgst
+            sgst
+            igst
+          }
+          total
+        }
+      }
+    }
+    out {
+      _id
+      count
+      total
+      items {
+        user {
+          firstName
+          lastName
+          phone
+          id
+        }
+        address {
+          firstName
+          lastName
+          address
+          phone
+        }
+        amount {
+          subtotal
+          discount
+          shipping
+          tax {
+            cgst
+            sgst
+            igst
+          }
+          total
+        }
+      }
+    }
+    delivered {
+      _id
+      count
+      total
+      items {
+        user {
+          firstName
+          lastName
+          phone
+          id
+        }
+        address {
+          firstName
+          lastName
+          address
+          phone
+        }
+        amount {
+          subtotal
+          discount
+          shipping
+          tax {
+            cgst
+            sgst
+            igst
+          }
+          total
+        }
+      }
+    }
+    cancelled {
+      _id
+      count
+      total
+      items {
+        user {
+          firstName
+          lastName
+          phone
+          id
+        }
+        address {
+          firstName
+          lastName
+          address
+          phone
+        }
+        amount {
+          subtotal
+          discount
+          shipping
+          tax {
+            cgst
+            sgst
+            igst
+          }
+          total
+        }
+      }
+    }
+    all {
+      _id
+      count
+      total
+      items {
+        user {
+          firstName
+          lastName
+          phone
+          id
+        }
+        address {
+          firstName
+          lastName
+          address
+          phone
+        }
+        amount {
+          subtotal
+          discount
+          shipping
+          tax {
+            cgst
+            sgst
+            igst
+          }
+          total
+        }
+      }
+    }
+  }
+  settings {
+    orderStatuses {
+      status
+      title
+      body
+      icon
+    }
+  }
+}

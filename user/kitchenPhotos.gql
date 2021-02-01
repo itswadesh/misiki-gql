@@ -1,0 +1,32 @@
+mutation updateProfile(
+  $kitchenPhotos: [String]
+  $public: Boolean
+  $restaurant: String
+  $about: String
+) {
+  updateProfile(
+    info: {
+      kitchenPhotos: $kitchenPhotos
+      public: $public
+      restaurant: $restaurant
+      about: $about
+    }
+  ) {
+    firstName
+    lastName
+    avatar
+    address {
+      address
+      town
+      city
+      state
+      zip
+    }
+    info {
+      public
+      restaurant
+      kitchenPhotos
+      about
+    }
+  }
+}

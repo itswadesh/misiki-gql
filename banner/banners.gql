@@ -1,0 +1,34 @@
+query banners(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $type: String
+  $city: String
+  $active: Boolean
+) {
+  banners(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    type: $type
+    city: $city
+    active: $active
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      link
+      heading
+      img
+      type
+      city
+      active
+      createdAt
+      updatedAt
+    }
+  }
+}

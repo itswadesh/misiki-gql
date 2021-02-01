@@ -1,0 +1,18 @@
+query addresses {
+  addresses {
+    id
+    email
+    firstName
+    lastName
+    address
+    town
+    city
+    country
+    state
+    zip
+    phone
+    active
+    createdAt
+    updatedAt
+  }
+}

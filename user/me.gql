@@ -1,0 +1,26 @@
+query me {
+  me {
+    id
+    firstName
+    lastName
+    email
+    phone
+    role
+    verified
+    active
+    avatar
+    address {
+      address
+      town
+      city
+      state
+      zip
+    }
+    info {
+      about
+      public
+      restaurant
+      kitchenPhotos
+    }
+  }
+}

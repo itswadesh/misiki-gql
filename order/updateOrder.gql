@@ -1,0 +1,50 @@
+mutation updateOrder($id: ID!, $pid: ID!, $status: String) {
+  updateOrder(id: $id, pid: $pid, status: $status) {
+    id
+    orderNo
+    user {
+      firstName
+      lastName
+      phone
+    }
+    amount {
+      qty
+      subtotal
+      discount
+      shipping
+      tax {
+        cgst
+        sgst
+        igst
+      }
+      total
+    }
+    payment_order_id
+    delivery {
+      otp
+    }
+    items {
+      pid
+      name
+      slug
+      img
+      price
+      qty
+      status
+      vendor {
+        firstName
+        lastName
+        restaurant
+        phone
+      }
+    }
+    address {
+      address
+      firstName
+      lastName
+      phone
+    }
+    createdAt
+    updatedAt
+  }
+}

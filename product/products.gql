@@ -1,0 +1,68 @@
+query products(
+  $page: Int
+  $skip: Int
+  $limit: Int
+  $search: String
+  $sort: String
+  $vendor: String
+  $category: String
+  $active: Boolean
+) {
+  products(
+    page: $page
+    skip: $skip
+    limit: $limit
+    search: $search
+    sort: $sort
+    vendor: $vendor
+    category: $category
+    active: $active
+  ) {
+    data {
+      id
+      slug
+      name
+      type
+      price
+      stock
+      img
+      time
+      active
+      popularity
+      position
+      city
+      badge {
+        featured
+        hot
+        new
+        sale
+        recommended
+      }
+      title
+      metaDescription
+      keywords
+      ratings
+      reviews
+      category {
+        name
+      }
+      vendor {
+        id
+        firstName
+        lastName
+        phone
+        email
+        address {
+          address
+        }
+        info {
+          restaurant
+          kitchenPhotos
+        }
+      }
+    }
+    count
+    pageSize
+    page
+  }
+}
