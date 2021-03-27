@@ -5,6 +5,7 @@ mutation saveProduct(
   $type: String
   $city: String
   $price: Int
+  $mrp: Int
   $stock: Int
   $img: String
   $time: String
@@ -25,6 +26,7 @@ mutation saveProduct(
     type: $type
     city: $city
     price: $price
+    mrp: $mrp
     stock: $stock
     img: $img
     time: $time
