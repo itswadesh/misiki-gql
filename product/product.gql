@@ -15,6 +15,7 @@ query Product($id: ID!) {
     type
     city
     price
+    mrp
     stock
     img
     time

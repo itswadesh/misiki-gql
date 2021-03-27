@@ -6,6 +6,7 @@ query popular($city: String) {
       name
       type
       price
+      mrp
       stock
       img
       time
