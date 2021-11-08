@@ -4,7 +4,7 @@ mutation saveLocation(
   $active: Boolean
   $lat: Float
   $lng: Float
-  $zips: [Float]
+  $zip: String
 ) {
   saveLocation(
     id: $id
@@ -12,14 +12,14 @@ mutation saveLocation(
     active: $active
     lat: $lat
     lng: $lng
-    zips: $zips
+    zip: $zip
   ) {
     id
     name
     active
     lat
     lng
-    zips
+    zip
     createdAt
     updatedAt
   }

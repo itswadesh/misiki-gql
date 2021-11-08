@@ -3,7 +3,7 @@ query search(
   $skip: Int
   $limit: Int
   $foodType: String
-  $zips: [Float]
+  $zip: String
   $search: String
   $sort: String
   $q: String
@@ -14,7 +14,7 @@ query search(
     skip: $skip
     limit: $limit
     foodType: $foodType
-    zips: $zips
+    zip: $zip
     search: $search
     sort: $sort
   ) {

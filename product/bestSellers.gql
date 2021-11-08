@@ -1,5 +1,5 @@
-query bestSellers($zips: [Float]) {
-  bestSellers(zips: $zips) {
+query bestSellers($zip: String) {
+  bestSellers(zip: $zip) {
     t {
       count
       amount
