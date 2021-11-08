@@ -2,8 +2,8 @@ query search(
   $page: Int
   $skip: Int
   $limit: Int
-  $type: String
-  $city: String
+  $foodType: String
+  $zips: [Float]
   $search: String
   $sort: String
   $q: String
@@ -13,8 +13,8 @@ query search(
     q: $q
     skip: $skip
     limit: $limit
-    type: $type
-    city: $city
+    foodType: $foodType
+    zips: $zips
     search: $search
     sort: $sort
   ) {
@@ -22,7 +22,7 @@ query search(
       id
       slug
       name
-      type
+      foodType
       price
       stock
       img
@@ -37,8 +37,8 @@ query search(
         email
         avatar
         info {
-          restaurant
-          kitchenPhotos
+          store
+          storePhotos
         }
       }
     }

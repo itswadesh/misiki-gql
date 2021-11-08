@@ -20,10 +20,6 @@ mutation addToCart($qty: Int!, $pid: ID!, $replace: Boolean) {
       charge
     }
     total
-    tax {
-      cgst
-      sgst
-      igst
-    }
+    tax
   }
 }

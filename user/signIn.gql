@@ -8,10 +8,8 @@ mutation signIn($email: String!, $password: String!) {
     city
     country
     state
-    coords {
-      lat
-      lng
-    }
+    lat
+    lng
     zip
     phone
     active

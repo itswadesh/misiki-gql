@@ -46,10 +46,8 @@ query order($id: ID!) {
       state
       zip
       address
-      coords {
-        lat
-        lng
-      }
+      lat
+      lng
     }
     items {
       pid

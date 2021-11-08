@@ -28,10 +28,8 @@ query orders {
         firstName
         lastName
         address
-        coords {
-          lat
-          lng
-        }
+        lat
+        lng
       }
 
       items {

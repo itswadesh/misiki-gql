@@ -13,10 +13,8 @@ mutation checkout(
     otp
     location {
       city
-      coords {
-        lat
-        lng
-      }
+      lat
+      lng
       state
       zip
     }

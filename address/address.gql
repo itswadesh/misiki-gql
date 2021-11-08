@@ -1,21 +1,21 @@
-query Address($id: ID!) {
+query address($id: ID!) {
   address(id: $id) {
     id
     email
     firstName
     lastName
     address
+    locality
     town
     city
     country
     state
-    coords {
-      lat
-      lng
-    }
     zip
     phone
+    lat
+    lng
     active
+    verified
     createdAt
     updatedAt
   }
