@@ -1,14 +1,14 @@
 mutation updateProfile(
   $kitchenPhotos: [String]
   $public: Boolean
-  $restaurant: String
+  $store: String
   $about: String
 ) {
   updateProfile(
     info: {
       kitchenPhotos: $kitchenPhotos
       public: $public
-      restaurant: $restaurant
+      store: $store
       about: $about
     }
   ) {
@@ -24,7 +24,7 @@ mutation updateProfile(
     }
     info {
       public
-      restaurant
+      store
       kitchenPhotos
       about
     }

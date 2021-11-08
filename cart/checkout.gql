@@ -36,7 +36,7 @@ mutation checkout(
       slug
       img
       vendor {
-        restaurant
+        store
       }
     }
     address {

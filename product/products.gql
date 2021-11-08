@@ -57,7 +57,7 @@ query products(
           address
         }
         info {
-          restaurant
+          store
           kitchenPhotos
         }
       }

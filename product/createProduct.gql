@@ -40,7 +40,7 @@ mutation createProduct(
       lastName
       phone
       info {
-        restaurant
+        store
       }
     }
   }

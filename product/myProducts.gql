@@ -33,7 +33,7 @@ query myProducts(
         phone
         email
         info {
-          restaurant
+          store
           kitchenPhotos
         }
       }

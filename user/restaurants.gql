@@ -1,5 +1,5 @@
-query restaurants {
-  restaurants {
+query stores {
+  stores {
     id
     email
     firstName

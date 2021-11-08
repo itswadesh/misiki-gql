@@ -20,7 +20,7 @@ query reviews($page: Int, $search: String, $limit: Int, $sort: String) {
         firstName
         lastName
         info {
-          restaurant
+          store
         }
         phone
       }

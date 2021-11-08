@@ -41,7 +41,7 @@ query orders {
         qty
         status
         vendor {
-          restaurant
+          store
         }
       }
     }

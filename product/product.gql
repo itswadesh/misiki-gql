@@ -42,7 +42,7 @@ query Product($id: ID!) {
         address
       }
       info {
-        restaurant
+        store
         kitchenPhotos
       }
     }

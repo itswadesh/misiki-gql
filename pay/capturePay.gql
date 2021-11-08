@@ -31,7 +31,7 @@ mutation capturePay($id: String!, $oid: String!) {
       price
       status
       vendor {
-        restaurant
+        store
       }
     }
     comment

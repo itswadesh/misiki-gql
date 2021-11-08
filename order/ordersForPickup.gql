@@ -59,7 +59,7 @@ query ordersForPickup(
         qty
         status
         vendor {
-          restaurant
+          store
           firstName
           lastName
           phone

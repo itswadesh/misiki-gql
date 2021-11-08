@@ -73,7 +73,7 @@ mutation saveProduct(
       lastName
       phone
       info {
-        restaurant
+        store
       }
     }
   }

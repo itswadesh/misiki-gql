@@ -58,7 +58,7 @@ query myCustomers(
             address
           }
           phone
-          restaurant
+          store
         }
       }
     }

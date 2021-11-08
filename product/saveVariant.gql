@@ -22,7 +22,7 @@ mutation saveVariant(
       lastName
       phone
       info {
-        restaurant
+        store
       }
     }
     variants {

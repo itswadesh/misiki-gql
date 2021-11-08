@@ -16,7 +16,7 @@ query review($id: ID!) {
       firstName
       lastName
       info {
-        restaurant
+        store
       }
       phone
     }

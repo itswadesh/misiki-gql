@@ -34,7 +34,7 @@ query myOrders(
           gender
           info {
             public
-            restaurant
+            store
             kitchenPhotos
           }
           avatar
@@ -64,7 +64,7 @@ query myOrders(
         qty
         status
         vendor {
-          restaurant
+          store
           firstName
           lastName
           phone

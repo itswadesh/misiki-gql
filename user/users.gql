@@ -19,7 +19,7 @@ query users($page: Int, $search: String, $limit: Int, $sort: String) {
         city
       }
       info {
-        restaurant
+        store
         public
       }
       createdAt

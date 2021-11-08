@@ -34,7 +34,7 @@ mutation updateOrder($id: ID!, $pid: ID!, $status: String) {
       vendor {
         firstName
         lastName
-        restaurant
+        store
         phone
       }
     }

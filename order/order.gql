@@ -64,7 +64,7 @@ query order($id: ID!) {
         address {
           address
         }
-        restaurant
+        store
       }
       status
     }
