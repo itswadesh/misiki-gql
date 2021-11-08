@@ -34,7 +34,7 @@ query myProducts(
         email
         info {
           store
-          kitchenPhotos
+          storePhotos
         }
       }
     }

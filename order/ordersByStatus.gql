@@ -34,7 +34,7 @@ query ordersByStatus(
           info {
             public
             store
-            kitchenPhotos
+            storePhotos
           }
           avatar
         }

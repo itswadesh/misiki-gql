@@ -58,7 +58,7 @@ query products(
         }
         info {
           store
-          kitchenPhotos
+          storePhotos
         }
       }
     }

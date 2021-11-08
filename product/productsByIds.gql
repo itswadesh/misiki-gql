@@ -19,7 +19,7 @@ query productsByIds($ids: [ID!]) {
       info {
         store
         public
-        kitchenPhotos
+        storePhotos
       }
     }
   }
