@@ -3,7 +3,7 @@ query search(
   $skip: Int
   $limit: Int
   $foodType: String
-  $zip: String
+  $zip: Float
   $search: String
   $sort: String
   $q: String

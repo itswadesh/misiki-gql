@@ -1,4 +1,4 @@
-query popular($store: ID, $page: Int, $zip: String) {
+query popular($store: ID, $page: Int, $zip: Float) {
   popular(store: $store, page: $page, zip: $zip) {
     data {
       id
@@ -15,7 +15,7 @@ query popular($store: ID, $page: Int, $zip: String) {
       time
       ratings
       reviews
-      zip
+      zips
       vendor {
         id
         firstName
