@@ -4,8 +4,15 @@ query banner($id: String!) {
     link
     heading
     img
+    imgCdn
     type
+    sort
+    store
+    groupId
+    groupTitle
+    pageId
     active
+    isMobile
     createdAt
     updatedAt
   }

@@ -4,8 +4,12 @@ query banners(
   $limit: Int
   $sort: String
   $type: String
-  $city: String
+  $pageId: String
+  $groupId: String
+  $groupTitle: String
   $active: Boolean
+  $isMobile: Boolean
+  $store: ID
 ) {
   banners(
     page: $page
@@ -13,8 +17,12 @@ query banners(
     limit: $limit
     sort: $sort
     type: $type
-    city: $city
+    pageId: $pageId
+    groupId: $groupId
+    groupTitle: $groupTitle
     active: $active
+    isMobile: $isMobile
+    store: $store
   ) {
     count
     page
@@ -24,11 +32,17 @@ query banners(
       link
       heading
       img
+      imgCdn
+      sort
       type
-      city
+      pageId
+      groupId
+      groupTitle
       active
+      isMobile
       createdAt
       updatedAt
+      store
     }
   }
 }

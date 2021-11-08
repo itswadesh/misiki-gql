@@ -1,5 +1,5 @@
-query popular($city: String) {
-  popular(page: 0, city: $city) {
+query popular($store: ID, $page: Int, $zips: [Float]) {
+  popular(store: $store, page: $page, zips: $zips) {
     data {
       id
       slug
@@ -9,9 +9,13 @@ query popular($city: String) {
       mrp
       stock
       img
+      imgCdn
+      images
+      imagesCdn
       time
       ratings
       reviews
+      zips
       vendor {
         id
         firstName
@@ -19,8 +23,8 @@ query popular($city: String) {
         phone
         email
         info {
-          restaurant
-          kitchenPhotos
+          store
+          storePhotos
         }
       }
     }

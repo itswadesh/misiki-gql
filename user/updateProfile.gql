@@ -36,11 +36,5 @@ mutation updateProfile(
       zip
     }
     role
-    info {
-      public
-      about
-      restaurant
-      kitchenPhotos
-    }
   }
 }
