@@ -16,11 +16,5 @@ query me {
       state
       zip
     }
-    info {
-      about
-      public
-      restaurant
-      kitchenPhotos
-    }
   }
 }

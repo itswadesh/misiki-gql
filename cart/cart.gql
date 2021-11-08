@@ -22,10 +22,6 @@ query cart {
       charge
     }
     total
-    tax {
-      cgst
-      sgst
-      igst
-    }
+    tax
   }
 }
